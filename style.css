@@ -1,0 +1,405 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    max-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(/showcase.jpg);
+    background-color: #656568;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 730px;
+}
+nav {
+   height: 100px;
+  
+}
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.content-right {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 20px;
+    flex-basis: auto;
+    align-items: center;
+}
+.logo img {
+    height: 7.3rem;
+    cursor: pointer;
+}
+.dropdown-menu {
+    position: relative;
+    transition: opacity 1s;
+}
+.dropdown-menu button {
+    transition: opacity 1s;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    width: 100%;
+    background-color: rgb(146, 138, 138);
+    line-height: 20px;
+    text-align: center;
+}
+.dropdown-content a {
+    text-decoration: none;
+}
+.active {
+    visibility: visible;
+}
+.dropdown-content a {
+    color: #fff;
+}
+.content-right .nav-btn {
+    padding: 5px;
+    border: none;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.signin-menu  {
+   
+}
+#redBtn {
+    border: none;
+    font-size: 17px;
+    background-color: #d41528;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px;
+    width: 80px;
+}
+.showcase-text {
+   color: #fff;
+   display: flex;
+   height: 400px;
+   margin-top: 3rem;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.showcase-text h1 {
+    font-size: 4rem;
+    line-height: 70px;
+}
+.showcase-text .subtext1 {
+    font-size: 1.5rem;
+}
+.showcase-text p {
+    font-size: 1.2rem;
+}
+.showcase-text input {
+   height: 55px;
+   width: 600px;
+   padding-left: 10px;
+}
+
+.showcase-text button {
+    padding: 20px;
+    font-size: 1.4rem;
+    border: none;
+    font-size: 17px;
+    background-color: #d41528;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+section, aside {
+    background-color: #000;
+}
+.info-sec{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 100%;
+}
+.sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-top: 5px solid #656568;
+}
+.sec h2 {
+    font-size: 50px;
+}
+.sec p {
+    font-size: 25px;
+}
+.container-faq {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.container-faq  h1 {
+    text-align: center;
+}
+.center-faq {
+    width: 50%;
+}
+.faq-collapse {
+    width: 55%;
+    margin-top: 15px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    background-color: #38383a;
+    padding: 7px 20px;
+    justify-content: space-between;
+    flex-basis: 10px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.questions h2 {
+    
+}
+.questions i {
+    font-size: 40px;
+    margin-top: 12px;
+   
+}
+.questions-dropdown {
+    visibility: hidden;
+    background-color: #38383a;
+    position: absolute;    
+    border-top: 2px solid #656568; 
+    width: 100%;
+    padding: 12px;
+    
+}
+.faq-collapse {
+    font-weight: 200;
+    position: relative;
+    transition: all 0.5s linear;
+}
+.questions-dropdown p {
+    
+}
+.center-faq h1{
+    font-size: 50px;
+}
+.membership-input {
+    margin-top: 75px;
+    text-align: center;
+}
+.membership-input  p {
+    font-size: 20px;
+}
+.membership-input input {
+    height: 57px;
+    width: 600px;
+    padding-left: 10px;
+ }
+ 
+ .membership-input button {
+     padding: 20px;
+     font-size: 1.4rem;
+     border: none;
+     padding-bottom: 22px;
+     font-size: 17px;
+     background-color: #d41528;
+     color: #fff;
+     font-weight: 400;
+     cursor: pointer;
+ }
+ aside {
+    padding-bottom: 55px;
+     border-top: 5px solid #656568;
+ }
+.other-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: #000;
+    padding: 70px; 
+    border-top: 5px solid #656568;
+    color: #656568;
+    font-size: 13px;
+}
+
+.line-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 80px;
+    justify-content: center;   
+    align-items: center;
+}
+.line-grid > div {
+    position: relative;
+}
+.line2 {
+    
+}
+.top-text {
+    margin-bottom: 35px;
+}
+.top-text p {
+    font-size: 17px;
+}
+.bottom-info {
+    margin-top: 35px;
+}
+.bottom-info button {
+    padding: 14px;
+    border: 0.6px solid rgb(167, 162, 162);
+    background-color: transparent;
+    color: #656568;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bottom-info p {
+    margin-top: 25px;
+}
+
+/*FOR SMALLER SCREENS*/
+@media only screen and (max-width: 788px) {
+    .sec {
+        padding-left: 20px;
+    }
+    .sec h2 {
+        font-size: 2.4rem;
+    }
+    .sec p {
+        font-size: 1.3rem;
+    }
+    .info-image img{
+        width: 89%;
+    }
+    .center-text input, .membership-input input {
+        width: 62%;
+    }
+    .center-text h1 {
+        font-size: 2.5rem;
+    }
+    .membership-input p {
+        font-size: 17px;
+        word-break: break-word;
+        margin-right: 20px;
+    }
+    .center-faq h1 {
+        font-size: 2rem;
+    }
+    .questions {
+        font-size: 13px;
+        
+    }
+    .line-grid {
+        column-gap: 40px;
+        
+    }
+
+    .content-right {
+        float: right;
+        justify-content: flex-end;
+        gap: 9px;
+  }
+}
+@media only screen and (max-width: 788px) {
+    .membership-input input {
+        width: min-content;
+    }
+    
+}
+@media only screen and (min-width: 789px) {
+    .sec {
+        padding-left: 20px;
+    }
+    .info-image img{
+        width: 85%;
+    }
+}
+/* 375px below */
+
+@media screen and (max-width: 375px){
+    .sec h2 {
+        font-size: 25px;
+    }
+    .sec p {
+        font-size: 18px;
+    }
+    .info-image img{
+        width: 89%;
+    }
+    .center-text input, .membership-input input {
+        width: fit-content;
+    }
+   
+    .center-text h1 {
+        font-size: 35px;
+    }
+    .center-text p {
+        font-size: 17px;
+    }
+    .membership-input p {
+        font-size: 17px;
+        word-break: break-word;
+        margin-right: 22px;
+    }
+    .center-faq h1 {
+        font-size: 2rem;
+    }
+    .questions {
+        font-size: 13px;
+        width: min-content;  
+    }
+    header .logo img {
+        width: 87px;
+        height: 87px;
+    }
+    .line-grid {
+        column-gap: 20px;
+        font-size: 13px;
+    }
+    .bottom-info button {
+        padding: 7px;
+        font-size: 12px;
+    }
+    .questions {
+        font-size: 10px;
+        width: 85%;
+    }
+    .content-right {
+        float: right;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    
+}
+/*FOR GALAXY FOLDS */
+@media screen and (max-width:290px) {
+    body {
+        width: min-content;
+        
+    }
+}
